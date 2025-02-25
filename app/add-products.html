@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm TT4 - Simulation</title>
+    <title>Add Products</title>
 </head>
 
 <body>
@@ -48,7 +48,31 @@
                 </div>
             </nav>
             <!-- Page content-->
-            <div id="products" class="container-fluid p-5">
+            <div id="content" class="container-fluid p-5">
+                <h2 class="mb-4">Add New Product</h2>
+        <form>
+            <div class="mb-3">
+                <label for="productPhoto" class="form-label">Photo</label>
+                <input type="file" class="form-control" id="productPhoto" accept="image/*">
+            </div>
+            <div class="mb-3">
+                <label for="productTitle" class="form-label">Title</label>
+                <input type="text" class="form-control" id="productTitle" placeholder="Enter product title" required>
+            </div>
+            <div class="mb-3">
+                <label for="productDescription" class="form-label">Description</label>
+                <textarea class="form-control" id="productDescription" maxlength="100" placeholder="Enter product description" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Price ($)</label>
+                <input type="number" class="form-control" id="productPrice" placeholder="Enter product price" required>
+            </div>
+            <div class="mb-3">
+                <label for="productQuantity" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="productQuantity" placeholder="Enter quantity" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
             </div>
         </div>
     </div>
